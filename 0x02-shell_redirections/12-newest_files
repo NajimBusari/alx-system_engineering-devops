@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type f -print0 | xargs -0 ls -t | head -n 10
+ls -1tp | grep -v */ | head -n 10
