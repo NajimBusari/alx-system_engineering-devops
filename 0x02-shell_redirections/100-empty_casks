@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 $(find . -empty)
+find . -empty -print0 | xargs -0 ls -a1
